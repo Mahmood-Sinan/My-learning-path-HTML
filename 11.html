@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <style>
+         table{
+            border-spacing:  0px ;
+         }
+         td{
+            border:solid 1px;
+         }
+         th{
+            border:solid 2px;
+         }
+         tr:nth-child(2){
+            color:red;
+         }
+         #wrap{
+            display:flex ;
+            flex-wrap: wrap;
+         }
+         #nowrap{
+            display:flex ;
+            flex-wrap: nowrap;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="nowrap">
+      <h2 style="border:dotted">dotted</h2>
+      <h2 style="border: dashed">dashed</h2>
+      <h2 style="border: solid">solid</h2>
+   </div>
+   <div id="wrap">
+      <h2 style="border: double">double</h2>
+      <h2 style="border: inset">inset</h2>
+      <h2 style="border: outset">outset</h2>
+      </div>
+      <table>
+         <tr>
+            <th>month</th>
+            <th>budget</th>  
+            <th>tax</th>
+         </tr>
+         <tr>
+            <td>January</td>
+            <td>200</td>
+            <td rowspan="2">5</td>
+         </tr>
+         <tr>
+            <td>February</td>
+            <td>300</td>
+         </tr>
+         <tr>
+            <td colspan="2">Total budget:900</td>
+         </tr>
+      </table>
+   </body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+   <head>
+      <style>
+         header{ background-color:red; } article{ background-color:blue; } section{ background-color:green; } footer{ background-color:#ffffff; } aside { background-color:cyan; 
+         }
+         #ul1{
+            list-style-type: square;
+            list-style-position: inside;
+            list-style-image: url('Images/adobe.png') ;
+         }
+         #ul2 li::before{
+            content: url('Images/adobe.png');
+            left:-30px;
+            top:0;
+            width:20px;
+            height: 20px;
+
+         }
+      </style>
+      <title>Healthcare Blog</title>
+   </head>
+   <body>
+      <header>
+         <h1>Efficient healthy recipe </h1>
+      </header>
+      <article>
+         <h2>Vegan Stuffed Bell Peppers</h2>
+         <section>
+            <h3>Ingredients</h3>
+            <ul id="ul1">
+               <li> A one cup of tea</li>
+               <li>....</li>
+            </ul>
+         </section>
+         <section>
+            <h3>Instruction </h3>
+            <ol>
+               <li>Preheat oven to 375.5</li>
+               <li>....</li>
+            </ol></section>
+            <aside>
+               <h3>More Vegan recipes</h3>
+               <ul>
+                  <li><a href="#">Vegan lentil soup</a></li>
+               </ul>
+            </aside>
+         </article>
+         <aside>
+            <h2>Suggested recipe</h2>
+            <ul id="ul2">
+               <li><a href="#">Fried Rice</a></li>
+               <li><a href="#">Chicken Rings</a></li>
+            </ul>
+         </aside>
+      </main>
+      <footer>
+         <p>Healthy Recipe Blog &copy;2023</p>
+      </footer>
+   </body>
+</html>
